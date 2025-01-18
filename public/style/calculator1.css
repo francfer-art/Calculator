@@ -1,0 +1,314 @@
+:root {
+  --color1: #3f304d;
+  --color2: #65436c;
+  --color3: #976296;
+  --color4: #e18bca;
+  --color5: #f8b8ed;
+
+  --color11: #5d2944;
+  --color22: #7e3752;
+  --color33: #b14f67;
+  --color44: #f87483;
+  --color55: #ffa9a3;
+
+  --color111: #262420;
+  --color222: #315956;
+  --color333: #da6f22;
+  --color444: #ecc858;
+  --color555: #f8efad;
+
+  --color1111: #112932;
+  --color2222: #0e5361;
+  --color3333: #0a8b9e;
+  --color4444: #05d5e7;
+  --color5555: #0ffff8;
+
+  --color11111: #a58294;
+  --color22222: #af9c98;
+  --color33333: #154f61;
+  --color44444: #5f8b89;
+  --color55555: #c7d6cf;
+}
+
+* {
+  font-family: "Special Elite", system-ui;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  font-size: 2em; /* Ajusta el tamaño de la fuente según lo necesites */
+  background: linear-gradient(90deg, rgba(63,48,77,1) 0%, rgba(151,98,150,1) 50%, rgba(248,184,237,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  background: rgb(63,48,77);
+  background: linear-gradient(180deg, rgba(63,48,77,1) 0%, rgba(151,98,150,1) 50%, rgba(248,184,237,1) 100%);
+}
+
+.calculator {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
+
+  input:hover:nth-child(1) {
+      background: rgb(63,48,77);
+      background: linear-gradient(160deg, rgba(63,48,77,1) 0%, rgba(151,98,150,1) 50%, rgba(248,184,237,1) 100%);
+  }
+}
+
+.fila {
+  display: flex;
+  gap: 1rem;
+  
+  input {
+    width: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    border: 3px solid var(--color1);
+    border-radius: 30px;
+    box-shadow: 4px 4px 5px 5px var(--color2);
+
+    &:hover:nth-child(1) {
+      background: rgb(63,48,77);
+      background: linear-gradient(0deg, rgba(63,48,77,1) 0%, rgba(151,98,150,1) 50%, rgba(248,184,237,1) 100%);
+    }
+    &:hover:nth-child(2) {
+      background: rgb(63,48,77);
+      background: linear-gradient(180deg, rgba(63,48,77,1) 0%, rgba(151,98,150,1) 50%, rgba(248,184,237,1) 100%);
+    }
+    &:hover:nth-child(3) {
+      background: rgb(63,48,77);
+      background: linear-gradient(234deg, rgba(63,48,77,1) 0%, rgba(151,98,150,1) 50%, rgba(248,184,237,1) 100%);
+    }
+    &:hover:nth-child(4) {
+      background: var(--color4);
+      background: linear-gradient(280deg, rgba(63,48,77,1) 0%, rgba(151,98,150,1) 50%, rgba(248,184,237,1) 100%);
+    }
+  }
+}
+
+.botones {
+  display: flex;
+  height: 50vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  
+  button {
+    font-size: 2rem;
+    border: none;
+    margin-bottom: 1rem;
+    background-color: transparent;
+  }
+}
+
+.screen {
+  color: var(--color5);
+  padding: 3rem;
+  font-size: 2rem;
+  background-color: var(--color1);
+  border: 7px solid var(--color5);
+  border-radius: 50px;
+  text-shadow: 1px 1px 10px white;
+  box-shadow: inset 0px 0px 20px white;
+}
+
+.color3 {
+  background-color: var(--color3);
+}
+
+.color4 {
+  background-color: var(--color4);
+}
+
+.color5 {
+  background-color: var(--color5);
+}
+
+.estilo1 {
+  background: rgb(63, 48, 77);
+  background: linear-gradient(270deg, rgba(248, 184, 237, 1) 0%, rgba(151, 98, 150, 1) 50%, rgba(63, 48, 77, 1) 100%);
+}
+
+.paleta {
+  border: 3px solid white;
+  width: 80px;
+  height: 80px;
+
+  &:hover {
+    width: 90px;
+    height: 90px;
+  }
+
+  .interior {
+    height: 20%;
+  }
+  div:nth-child(1) {
+    background-color: var(--color1);
+  }
+  div:nth-child(2) {
+    background-color: var(--color2);
+  }
+  div:nth-child(3) {
+    background-color: var(--color3);
+  }
+  div:nth-child(4) {
+    background-color: var(--color4);
+  }
+  div:nth-child(5) {
+    background-color: var(--color5);
+  }
+}
+
+.paleta2 {
+  border: 3px solid white;
+  width: 80px;
+  height: 80px;
+
+  &:hover {
+    width: 90px;
+    height: 90px;
+  }
+
+  .interior {
+    height: 20%;
+  }
+  div:nth-child(1) {
+    background-color: var(--color11);
+  }
+  div:nth-child(2) {
+    background-color: var(--color22);
+  }
+  div:nth-child(3) {
+    background-color: var(--color33);
+  }
+  div:nth-child(4) {
+    background-color: var(--color44);
+  }
+  div:nth-child(5) {
+    background-color: var(--color55);
+  }
+}
+
+.paleta3 {
+  border: 3px solid white;
+  width: 80px;
+  height: 80px;
+
+  &:hover {
+    width: 90px;
+    height: 90px;
+  }
+
+  .interior {
+    height: 20%;
+  }
+  div:nth-child(1) {
+    background-color: var(--color111);
+  }
+  div:nth-child(2) {
+    background-color: var(--color222);
+  }
+  div:nth-child(3) {
+    background-color: var(--color333);
+  }
+  div:nth-child(4) {
+    background-color: var(--color444);
+  }
+  div:nth-child(5) {
+    background-color: var(--color555);
+  }
+}
+
+.paleta4 {
+  border: 3px solid white;
+  width: 80px;
+  height: 80px;
+
+  &:hover {
+    width: 90px;
+    height: 90px;
+  }
+
+  .interior {
+    height: 20%;
+  }
+  div:nth-child(1) {
+    background-color: var(--color1111);
+  }
+  div:nth-child(2) {
+    background-color: var(--color2222);
+  }
+  div:nth-child(3) {
+    background-color: var(--color3333);
+  }
+  div:nth-child(4) {
+    background-color: var(--color4444);
+  }
+  div:nth-child(5) {
+    background-color: var(--color5555);
+  }
+}
+
+.paleta5 {
+  border: 3px solid white;
+  width: 80px;
+  height: 80px;
+
+  &:hover {
+    width: 90px;
+    height: 90px;
+  }
+
+  .interior {
+    height: 20%;
+  }
+  div:nth-child(1) {
+    background-color: var(--color11111);
+  }
+  div:nth-child(2) {
+    background-color: var(--color22222);
+  }
+  div:nth-child(3) {
+    background-color: var(--color33333);
+  }
+  div:nth-child(4) {
+    background-color: var(--color44444);
+  }
+  div:nth-child(5) {
+    background-color: var(--color55555);
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valorar {
+  padding: 1rem;
+  border: 4px solid var(--color5);
+  color: white;
+  border-radius: 20px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: white;
+    color: var(--color5);
+  }
+}
